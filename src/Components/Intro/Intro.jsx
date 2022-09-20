@@ -17,14 +17,15 @@ const Intro = () => {
       {/* Left Side */}
       <div className="i-left">
         <div className="i-name">
-          <span>Hy! I am</span>
+          <span>Olá! Eu sou</span>
           <span>Felipe Kreulich</span>
-          <span>Frontend Developer with high
-          level of experience in web designing
-          and development, producting the
-          Quality work</span>
+          <span>Desenvolvedor Frontend com alto
+            nível de experiência em Web Design e
+            Desenvolvimento, produzindo Trabalhos
+            de Qualidade.
+          </span>
         </div>
-        <button className="button i-button">Hire Me</button>
+        <button className="button i-button">Contrate</button>
         <div className="i-icons">
           <img src={Github} alt="GitHub" />
           <img src={LinkedIn} alt="LinkedIn" />
@@ -41,7 +42,7 @@ const Intro = () => {
           <FloatingDiv image={Crown} text1='Web' text2='Developer' />
         </div>
         <div style={{top: '18rem', left: '0rem'}}>
-          <FloatingDiv image={thumbup} text1='Best Design' text2='Award' />
+          <FloatingDiv image={thumbup} text1='Prêmio Melhor' text2='Design' />
         </div>
         {/* Blur Divs */}
         <div className='blur' style={{background: "rgb(238 210 255)"}}></div>

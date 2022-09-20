@@ -11,12 +11,12 @@ const Services = () => {
     <div className="services">
       {/* Left Side */}
       <div className="awesome">
-        <span>My Awesome</span>
-        <span>Services</span>
+        <span>Meus Incríveis</span>
+        <span>Serviços</span>
         <spane>
-        Here are some services I can offer you, just see the options I have available
+          Aqui está alguns serviços que ofereço, com ótima qualidade
           <br />
-          and choose, you can also download my curriculum if you want.
+          e logo abaixo, você pode fazer o download do meu curriculum.
         </spane>
         <a href={CV} download>
           <button className='button s-button'>Download CV</button>
@@ -46,7 +46,7 @@ const Services = () => {
           <Card 
           emoji={Humble}
           heading={"UI/UX"}
-          detail={"Creating a Beautiful Designs for your Enterprise"}
+          detail={"Criandos Ótimos Designs para sua Empresa."}
           />
         </div>
         <div className='blur s-blur2' style={{background: 'var(--purple)'}}></div>
