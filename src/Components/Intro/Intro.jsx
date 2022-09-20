@@ -14,6 +14,7 @@ import FloatingDiv from '../FloatingDiv/FloatingDiv';
 const Intro = () => {
   return (
     <div className="intro">
+      {/* Left Side */}
       <div className="i-left">
         <div className="i-name">
           <span>Hy! I am</span>
@@ -30,6 +31,7 @@ const Intro = () => {
           <img src={Instagram} alt="Instagram" />
         </div>
       </div>
+      {/* Right Side */}
       <div className="i-right">
         <img src={Vector1} alt="Vector" />
         <img src={Vector2} alt="Vector" />
