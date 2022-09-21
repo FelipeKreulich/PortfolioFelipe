@@ -15,6 +15,19 @@
   font-family: 'Gumela', sans-serif;
 }
 
+::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-image: linear-gradient(to top, var(--orange) 0%, var(--purple) 100%);
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--blueCard);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--black);
+  border-radius: 8px;
+}
+
 .App{
     padding: 0.5rem 3.5rem;
     overflow: hidden;

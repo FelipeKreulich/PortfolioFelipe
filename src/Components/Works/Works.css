@@ -1,0 +1,31 @@
+.works {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 90vh;
+  margin-top: 4rem;
+}
+
+/* Right Side */
+.w-right {
+  position: relative;
+}
+
+.w-mainCircle {
+  left: 9rem;
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+  top: 2rem;
+  background: white;
+}
+
+.w-mainCircle>* {
+  position: absolute;
+}
+
+.w-mainCircle>:nth-child(1) {
+  top: -3rem;
+  left: 6rem;
+}
