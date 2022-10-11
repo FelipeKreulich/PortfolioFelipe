@@ -5,45 +5,61 @@ import Fiverr from '../../img/fiverr.png';
 import Amazon from '../../img/amazon.png';
 import Shopify from '../../img/Shopify.png';
 import Facebook from '../../img/Facebook.png';
+import { themeContext } from '../../Context';
+import { motion } from "framer-motion";
+import { useContext } from 'react';
+import { Link } from 'react-scroll';
 
 const Works = () => {
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="works">
       {/* Left Side */}
       <div className='awesome'>
-        <span>Trabalho para estas</span>
-        <span>Empresas e Clientes</span>
+        <span style={{color: darkMode? 'white' : ''}}>Curiosidades</span>
+        <span>Sobre minha pessoa!</span>
         <spane>
-          Lorem iplum dolor sit amet dummy text of printing simpley
-          <br />
-          Lorem iplum dolor sit amet dummy text of printing simpley
-          <br />
-          Lorem iplum dolor sit amet dummy text of printing simpley
-          <br />
-          Lorem iplum dolor sit amet dummy text of printing simpley
+        Hello 🙋‍♂️, my name is Felipe, I'm 20 years old,
+        <br />
+        passionate about programming and all IT-related culture 🖤,
+        <br />
+        I'm currently studying Systems Analysis and Development 📚,
+        <br />
+        I hope you like my projects and profile. ✅
         </spane>
-        <button className='button s-button'>Contrate</button>
+        <Link spy={true} to='Contact' smooth={true}>
+          <button className='button s-button'>Contrate</button>
+        </Link>
         <div className='blur s-blur1' style={{background: "#ABF1FF94"}}></div>
       </div>
       {/* Right Side */}
       <div className='w-right'>
-        <div className="w-mainCircle">
+        <motion.div 
+          initial={{rotate: 45}}
+          whileInView={{rotate: 0}}
+          viewport={{margin:"-40px"}}
+          transition={{duration: 3.5, type: "spring"}}
+          className="w-mainCircle"
+        >
           <div className="w-secCircle">
             <img src={Upwork} alt="Upwork" />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="Upwork" />
+            <img src={Fiverr} alt="Fiverr" />
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="Upwork" />
+            <img src={Amazon} alt="Amazon" />
           </div>{" "}
           <div className="w-secCircle">
-            <img src={Shopify} alt="Upwork" />
+            <img src={Shopify} alt="Shopify" />
           </div>
           <div className="w-secCircle">
-            <img src={Facebook} alt="Upwork" />
+            <img src={Facebook} alt="Facebook" />
           </div>
-        </div>
+        </motion.div>
         {/* Background Circles */}
         <div className="w-backCircle blueCircle"></div>
         <div className="w-backCircle yellowCircle"></div>

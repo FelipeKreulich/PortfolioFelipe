@@ -3,8 +3,13 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
 import { useState } from 'react';
+import { themeContext } from '../../Context';
+import { useContext } from 'react';
 
 const Contact = () => {
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
 
   const form = useRef();
 
@@ -23,10 +28,10 @@ const Contact = () => {
   }
 
   return (
-    <div className="contact-form">
+    <div className="contact-form" id='Contact'>
       <div className="w-left">
         <div className="awesome">
-          <span>Entrar em Contato</span>
+          <span style={{color: darkMode? 'white' : ''}}>Entrar em Contato</span>
           <span>Fale Comigo</span>
           <div
             className='blur s-blur1'

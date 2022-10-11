@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css';
 import profilePic1 from "../../img/profile1.jpg";
 import profilePic2 from "../../img/profile2.jpg";
-import profilePic3 from "../../img/profile3.jpg";
+import profilePic3 from "../../img/profile3.jpeg";
 import profilePic4 from "../../img/profile4.jpg";
 
 const Testimonials = () => {
@@ -15,31 +15,30 @@ const Testimonials = () => {
     {
       img: profilePic1,
       review:
-        "Lorem impsum dolor, sit amet consectetur adipiscing elit. Ex officiis molestiae quod tempora laudantium error.",
+        "Medir o progresso da programação por linhas de código é como medir o progresso da construção de aeronaves em termos de peso.",
     },
     {
       img: profilePic2,
       review:
-        "Lorem impsum dolor, sit amet consectetur adipiscing elit. Ex officiis molestiae quod tempora laudantium error.",
+        "Qualquer um pode escrever um código que o computador entenda. Bons programadores escrevem códigos que os humanos entendam.",
     },
     {
       img: profilePic3,
       review:
-        "Lorem impsum dolor, sit amet consectetur adipiscing elit. Ex officiis molestiae quod tempora laudantium error.",
+        "Só por que alguma coisa não faz o que você planejou que ela fizesse não quer dizer que ela seja inútil.",
     },
     {
       img: profilePic4,
       review:
-        "Lorem impsum dolor, sit amet consectetur adipiscing elit. Ex officiis molestiae quod tempora laudantium error.",
+        "Uma linguagem não faz seu código ser bom, programadores bons fazem seu código ser bom.",
     },
   ]
 
   return (
-    <div className="t-wrapper">
+    <div className="t-wrapper" id='Testimonials'>
       <div className="t-heading">
-        <span>Os Clientes recebem um </span>
-        <span>Excepicional Trabalho </span>
-        <span>de mim...</span>
+        <span>O que te torna um bom </span>
+        <span>Programador</span>
         <div className="blur t-blur1" style={{ background: 'var(--purple)' }}></div>
         <div className="blur t-blur2" style={{ background: 'skyblue' }}></div>
       </div>
