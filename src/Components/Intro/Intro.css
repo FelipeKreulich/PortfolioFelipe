@@ -78,9 +78,8 @@
 }
 
 .i-right>:nth-child(3) {
-  transform: scale(0.7);
-  left: 18%;
-  top: -35%;
+  transform: scale(1.4);
+  left: 28%;
 }
 
 .i-right>:nth-child(4) {
@@ -115,11 +114,6 @@
   }
   .i-right .blur {
     display: none;
-  }
-  .i-right>:nth-child(3) {
-    transform: scale(0.6);
-    left: 28%;
-    top: -25%;
   }
   .floating-div:nth-of-type(1) {
     top: -7rem !important; 

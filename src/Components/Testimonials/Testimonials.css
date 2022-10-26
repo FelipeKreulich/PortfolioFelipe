@@ -57,6 +57,12 @@
   color: var(--gray);
 }
 
+.testimonials span:nth-child(1) {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 /* Slider */
 .t-wrapper .swiper {
   width: 100%;

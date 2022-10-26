@@ -35,6 +35,11 @@
   color: #5290fd;
 }
 
+.c-button:hover {
+  background: var(--orangeCard);
+  color: white;
+}
+
 @media screen and (max-width: 480px) {
   .card {
     width: auto;

@@ -4,41 +4,37 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
 import 'swiper/css/pagination';
 import 'swiper/css';
-import profilePic1 from "../../img/profile1.jpg";
-import profilePic2 from "../../img/profile2.jpg";
-import profilePic3 from "../../img/profile3.jpeg";
-import profilePic4 from "../../img/profile4.jpg";
 
 const Testimonials = () => {
 
   const clients = [
     {
-      img: profilePic1,
+      title: "Aplicação Web",
       review:
-        "Medir o progresso da programação por linhas de código é como medir o progresso da construção de aeronaves em termos de peso.",
+        "Desde uma simples landpage, sites pessoais ou comercial, até lojas virtuais e sistemas complexos para Internet.",
     },
     {
-      img: profilePic2,
+      title: "Aplicação Mobile",
       review:
-        "Qualquer um pode escrever um código que o computador entenda. Bons programadores escrevem códigos que os humanos entendam.",
+        "Aplicações híbridas ou nativas em multiplataformas para dispositivos móveis com Android ou IOS, disponibilizando em suas respectivas lojas e extraindo o seu instalador.",
     },
     {
-      img: profilePic3,
+      title: "Aplicação Desktop",
       review:
-        "Só por que alguma coisa não faz o que você planejou que ela fizesse não quer dizer que ela seja inútil.",
+        "Aplicaçõies multiplataformas exclusivas, para sistemas operacionais Windows, Linux, Mac OS, onde o usuário necessita instalar o software em sua máquina.",
     },
     {
-      img: profilePic4,
+      title: "Design Gráfico",
       review:
-        "Uma linguagem não faz seu código ser bom, programadores bons fazem seu código ser bom.",
+        "Essencial para o Marketing Digital, uma arte gráfica pode fazer toda a diferença para o seu negócio. Panfletos, Flyers, Banners, Avatars, entre Outras.",
     },
   ]
 
   return (
     <div className="t-wrapper" id='Testimonials'>
       <div className="t-heading">
-        <span>O que te torna um bom </span>
-        <span>Programador</span>
+        <span>Posso te </span>
+        <span>Ajudar?</span>
         <div className="blur t-blur1" style={{ background: 'var(--purple)' }}></div>
         <div className="blur t-blur2" style={{ background: 'skyblue' }}></div>
       </div>
@@ -52,7 +48,7 @@ const Testimonials = () => {
           return (
             <SwiperSlide key={index}>
               <div className="testimonials">
-                <img src={client.img} alt="Cliente" />
+                <span>{client.title}</span>
                 <span>{client.review}</span>
               </div>
             </SwiperSlide>

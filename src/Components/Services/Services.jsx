@@ -20,12 +20,12 @@ const Services = () => {
     <div className="services" id='Services'>
       {/* Left Side */}
       <div className="awesome">
-        <span style={{color: darkMode? 'white' : ''}}>Meus Incríveis</span>
-        <span>Serviços</span>
+        <span style={{color: darkMode? 'white' : ''}}>Minhas Incríveis</span>
+        <span>Qualificações</span>
         <spane>
-          Aqui está alguns serviços que ofereço, com ótima qualidade
+          Aqui está um pouco da minha trajetória nesse mundo da programação
           <br />
-          e logo abaixo, você pode fazer o download do meu curriculum.
+          e também está disponível para download o meu curriculum, fique à vontade!
         </spane>
         <a href={CV} download>
           <button className='button s-button'>Download CV</button>
@@ -42,7 +42,7 @@ const Services = () => {
         style={{left: '14rem'}}>
           <Card 
           emoji={HeartEmoji} 
-          heading={'Design'} 
+          heading={'Designer'} 
           detail={"Figma, Sketch, Photoshop, Adobe, Canva"} 
           />
         </motion.div>
@@ -67,7 +67,7 @@ const Services = () => {
           <Card 
           emoji={Humble}
           heading={"UI/UX"}
-          detail={"Criandos Ótimos Designs para sua Empresa."}
+          detail={"A experiência do usuário é um diferencial para aplicações modernas que focam soluções."}
           />
         </motion.div>
         <div className='blur s-blur2' style={{background: 'var(--purple)'}}></div>

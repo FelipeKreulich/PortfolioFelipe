@@ -29,13 +29,17 @@ const Intro = () => {
         <div className="i-name">
           <span style={{color: darkMode? 'white' : ''}}>Olá! Eu sou</span>
           <span>Felipe Kreulich</span>
-          <span>Me chamo Felipe, tenho 20 anos, sou programador Fullstack, 
+          <span>Me chamo Felipe, tenho 20 anos, sou programador Fullstack,
+          <br />
           atualmente cursando Análise e Desenvolvimento de Sistemas pela INSTED, 
+          <br />
           sou atencioso, criativo e prestativo, espero por aqui, conseguir boas oportunidades.
+          <br />
+          Eu amo Programação, me divirto muito e tomo bastante café durante meus projetos.
           </span>
         </div>
         <Link spy={true} to='Contact' smooth={true}>
-          <button className="button i-button">Contrate</button>
+          <button className="button i-button">Contato</button>
         </Link>
         <div className="i-icons">
           <a href="https://www.github.com/FelipeKreulich">

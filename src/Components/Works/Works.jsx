@@ -19,16 +19,26 @@ const Works = () => {
     <div className="works">
       {/* Left Side */}
       <div className='awesome'>
-        <span style={{color: darkMode? 'white' : ''}}>Curiosidades</span>
+        <span style={{color: darkMode? 'white' : ''}}>Um Pouco</span>
         <span>Sobre minha pessoa!</span>
         <spane>
-        Hello 🙋‍♂️, my name is Felipe, I'm 20 years old,
+        Olá meu nome é Felipe Kreulich, sou nascido e criado
         <br />
-        passionate about programming and all IT-related culture 🖤,
+        em Goiânia-GO. Com 14 anos tive meu primeiro Notebook
         <br />
-        I'm currently studying Systems Analysis and Development 📚,
+        foi quando tive meu primeiro contato com a programação,
         <br />
-        I hope you like my projects and profile. ✅
+        me apaixonei por todas as belezas que aquela tela cheia de
+        <br />
+        código tinha, foi quando então comecei os meu estudos em
+        <br />
+        programação, minha primeira linguagem foi Python. Desde então
+        <br />
+        fui conhecendo outras linguagens e me aprofundando, até que
+        <br />
+        conheci a área de Fullstack, a qual me dedico até hoje buscando
+        <br />
+        sempre mais conhecimento.
         </spane>
         <Link spy={true} to='Contact' smooth={true}>
           <button className='button s-button'>Contrate</button>

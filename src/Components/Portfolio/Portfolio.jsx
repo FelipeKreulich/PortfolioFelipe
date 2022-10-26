@@ -27,16 +27,24 @@ const Portfolio = () => {
       className='portfolio-slider'
       >
         <SwiperSlide>
-          <img src={Sidebar} alt="SideBar" />
+          <a href="https://moveit-project-three.vercel.app">
+            <img src={Sidebar} alt="SideBar" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Ecommerce} alt="Ecommerce" />
+          <a href="https://devflixproject.vercel.app">
+            <img src={Ecommerce} alt="Ecommerce" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={HOC} alt="HOC" />
+          <a href="https://devfinanceproject.vercel.app">
+            <img src={HOC} alt="HOC" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={MusicApp} alt="MusicApp" />
+          <a href="https://sharpness-audiovisual.vercel.app">
+            <img src={MusicApp} alt="MusicApp" />
+          </a>
         </SwiperSlide>
       </Swiper>
     </div>
