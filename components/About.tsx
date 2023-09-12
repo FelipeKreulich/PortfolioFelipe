@@ -22,7 +22,7 @@ const About = () => {
             Continuei estudando e tive oportunidade
             de estudar o ReactJS,{" "}
             <span className="text-textGreen">
-              o framework que mudou minha forma de enxergar o front-end.
+              o framework que mudou minha forma de enxergar o front-end.{" "}
             </span>
               Depois de um tempo fui introduzido ao back-end
               onde aprendi sobre NodeJS e Python para fazer
