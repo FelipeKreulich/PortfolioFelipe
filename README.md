@@ -1,38 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Pessoal
 
-## Getting Started
+![portfolio](https://github.com/FelipeKreulich/dynamicportfolio/assets/57125203/12c51b0e-8246-4703-a1bd-81c7ff7bde9f)
 
-First, run the development server:
+Projeto Pessoal do meu Portfolio
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## 🚀 Começando
+
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+
+Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
+
+### 📋 Pré-requisitos
+
+De que coisas você precisa para instalar o software e como instalá-lo?
+
+```
+É necessário um bom editor de códigos, como Visual Studio Code
+É necessário ter o NodeJS isntalado em sua máquina
+É recomendado ter o GitBash para clonar o repositório
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🔧 Instalação
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```
+Clone este repositório: git clone https://github.com/FelipeKreulich/weather_app.git
+Acesse a pasta weather_app com o seu editor de código
+Abra o terminal e digite: npm install | Para instalar as dependências do App
+Abra o terminal e ditite: npm run dev | Para iniciar o app em sua máquina
+```
+## 🛠️ Construído com
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Mencione as ferramentas que você usou para criar seu projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+* [React]((https://pt-br.legacy.reactjs.org/))
+* [JS]((https://developer.mozilla.org/pt-BR/docs/Web/JavaScript))
+* [TAILWINDS](https://tailwindcss.com/)
+* [NextJS](https://nextjs.org/)
 
-## Learn More
+## ✒️ Autores
 
-To learn more about Next.js, take a look at the following resources:
+* **Felipe Kreulich** - *Documentação* - [FelipeKreulich](https://github.com/FelipeKreulich)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 Licença
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Este projeto está sob a licença (MIT) - veja o arquivo [LICENSE.md](https://github.com/FelipeKreulich) para detalhes.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+⌨️ com ❤️ por [Felipe Kreulich](https://gist.github.com/FelipeKreulich) 😊
