@@ -9,36 +9,22 @@ const Google = () => {
       className="w-full"
     >
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
-        Web Developer
-        <span className="text-textGreen tracking-wide">@Google</span>
+        Análise e Desenvolvimento de Sistemas
+        <span className="text-textGreen tracking-wide">@Estácio</span>
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">
-        Jan 2022 - Dec 2023
+        Mar 2023 - Jul 2025
       </p>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-          distinctio doloribus quas ex ea sed.
-        </li>
-        <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
-            <TiArrowForward />
-          </span>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
-          sit adipisci ad exercitationem a amet cum porro recusandae eveniet,
-          accusantium animi tenetur rerum, culpa quibusdam! Consectetur
-          laboriosam hic harum modi.
-        </li>
-        <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
-            <TiArrowForward />
-          </span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam et
-          corporis necessitatibus? Pariatur voluptas ad, at et hic deserunt
-          sequi?
+          Inciei minha faculdade de Análise e Desenvolvimento de Sistemas
+          em Março de 2023, navegando pelo mundo do código e da inovação.
+          Com a graduação prevista para 2025, estou construindo meu caminho
+          para me tornar um desenvolvedor web excepcional. Venha explorar
+          meu crescimento e paixão pelo código em meu portfólio. 🚀💻
         </li>
       </ul>
     </motion.div>

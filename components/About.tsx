@@ -9,34 +9,34 @@ const About = () => {
       id="about"
       className="max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8"
     >
-      <SectionTitle title="About Me" titleNo="01" />
+      <SectionTitle title="Sobre mim" titleNo="01" />
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
           <p>
-            Hello! My name is Noor Mohammad and I enjoy creating things that
-            live on the internet. My interest in web development started back in
-            2012 when I decided to try editing custom Tumblr themes — turns out
-            hacking together a custom reblog button taught me a lot about HTML &
-            CSS!
+            Olá! Meu nome é Felipe Kreulich e gosto de criar websites.
+            Meu interesse em desenvolvimento web começou em 2020, quando
+            decidi estudar desenvolvimento front-end, então começei do
+            básico, com HTML, CSS e JavaScript!
           </p>
           <p>
-            Fast-forward to today, and I had the privilege of working at an
-            advertising agency, a start-up,{" "}
+            Continuei estudando e tive oportunidade
+            de estudar o ReactJS,{" "}
             <span className="text-textGreen">
-              a huge corporation, and a student-led design studio.
+              o framework que mudou minha forma de enxergar o front-end.
             </span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rem
-            accusantium fugiat veritatis, quidem repellat{" "}
+              Depois de um tempo fui introduzido ao back-end
+              onde aprendi sobre NodeJS e Python para fazer
+              o back-end.{" "}
             <span className="text-textGreen">
-              ab natus possimus? Sint, accusamus!
+              E não para por aí!
             </span>
           </p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-            ullam eligendi dolorum nostrum possimus quos iusto magnam ut esse
-            recusandae.
+            Acabei aprendendo um pouco de Java e
+            desenvolvi um sistema de gestão de OS
+            com o MySQL que aprendi em um vídeo no youtube.
           </p>
-          <p>Here are a few technologies I have been working with recently:</p>
+          <p>Aqui está algumas das tecnologias que uso recentemente:</p>
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
@@ -78,7 +78,7 @@ const About = () => {
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
-              MongoDB
+              MySQL
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">

@@ -66,7 +66,7 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1 }}
               >
-                Home
+                Início
               </motion.li>
             </Link>
 
@@ -81,7 +81,7 @@ const Navbar = () => {
                 transition={{ duration: 0.1, delay: 0.1 }}
               >
                 <span className="text-textGreen">01.</span>
-                About
+                Sobre
               </motion.li>
             </Link>
             <Link
@@ -95,7 +95,7 @@ const Navbar = () => {
                 transition={{ duration: 0.1, delay: 0.2 }}
               >
                 <span className="text-textGreen">02.</span>
-                Experience
+                Experiência
               </motion.li>
             </Link>
             <Link
@@ -109,7 +109,7 @@ const Navbar = () => {
                 transition={{ duration: 0.1, delay: 0.3 }}
               >
                 <span className="text-textGreen">03.</span>
-                Project
+                Projetos
               </motion.li>
             </Link>
             <Link
@@ -123,18 +123,18 @@ const Navbar = () => {
                 transition={{ duration: 0.1, delay: 0.4 }}
               >
                 <span className="text-textGreen">04.</span>
-                Contact
+                Contato
               </motion.li>
             </Link>
           </ul>
-          <a href="/assets/noor_resume.pdf" target="_blank">
+          <a href="/assets/curriculo.pdf" target="_blank">
             <motion.button
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
               className="px-4 py-2 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
             >
-              Resume
+              Curriculo
             </motion.button>
           </a>
         </div>
@@ -175,7 +175,7 @@ const Navbar = () => {
                       animate={{ x: 0, opacity: 1 }}
                       transition={{ duration: 0.2, delay: 0.1, ease: "easeIn" }}
                     >
-                      Home
+                      Início
                     </motion.li>
                   </Link>
 
@@ -190,7 +190,7 @@ const Navbar = () => {
                       transition={{ duration: 0.2, delay: 0.2, ease: "easeIn" }}
                     >
                       <span className="text-textGreen">01.</span>
-                      About
+                      Sobre
                     </motion.li>
                   </Link>
                   <Link
@@ -204,7 +204,7 @@ const Navbar = () => {
                       transition={{ duration: 0.2, delay: 0.3, ease: "easeIn" }}
                     >
                       <span className="text-textGreen">02.</span>
-                      Experience
+                      Experiência
                     </motion.li>
                   </Link>
                   <Link
@@ -218,7 +218,7 @@ const Navbar = () => {
                       transition={{ duration: 0.2, delay: 0.4, ease: "easeIn" }}
                     >
                       <span className="text-textGreen">03.</span>
-                      Project
+                      Projetos
                     </motion.li>
                   </Link>
                   <Link
@@ -232,11 +232,11 @@ const Navbar = () => {
                       transition={{ duration: 0.2, delay: 0.5, ease: "easeIn" }}
                     >
                       <span className="text-textGreen">04.</span>
-                      Contact
+                      Contato
                     </motion.li>
                   </Link>
                 </ul>
-                <a href="/assets/noor_resume.pdf" target="_blank">
+                <a href="/assets/curriculo.pdf" target="_blank">
                   <motion.button
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -251,7 +251,7 @@ const Navbar = () => {
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.8, ease: "easeIn" }}
-                    href="https://github.com/noorjsdivs"
+                    href="https://github.com/FelipeKreulich"
                     target="_blank"
                   >
                     <span className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
@@ -262,7 +262,7 @@ const Navbar = () => {
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.85, ease: "easeIn" }}
-                    href="https://www.youtube.com/channel/UChkOsij0dhgft0GhHRauOAA"
+                    href="https://www.youtube.com/channel/UCdFEsnKLFvM5gQPGXbEJlMw"
                     target="_blank"
                   >
                     <span className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
@@ -273,7 +273,7 @@ const Navbar = () => {
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.9, ease: "easeIn" }}
-                    href="https://www.linkedin.com/in/noor-mohammad-ab2245193/"
+                    href="https://www.linkedin.com/in/felipe-kreulich-17926128a/"
                     target="_blank"
                   >
                     <span className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
@@ -284,7 +284,7 @@ const Navbar = () => {
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.95, ease: "easeIn" }}
-                    href="https://www.facebook.com/Noorlalu143/"
+                    href="https://www.facebook.com/profile.php?id=100051443169479"
                     target="_blank"
                   >
                     <span className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
@@ -295,7 +295,7 @@ const Navbar = () => {
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 1, ease: "easeIn" }}
-                    href="https://www.instagram.com/simplenoor143/"
+                    href="https://www.instagram.com/_Kreulich/"
                     target="_blank"
                   >
                     <span className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
@@ -310,9 +310,9 @@ const Navbar = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.2, ease: "easeIn" }}
                 className="text-sm w-72 tracking-widest text-textGreen text-center mt-4"
-                href="mailto:noor.jsdivs@gmail.com"
+                href="mailto:contato.felipe.kreulich@gmail.com"
               >
-                <p>reactbd@proton.me</p>
+                <p>contato.felipe.kreulich@gmail.com</p>
               </motion.a>
             </motion.div>
           </div>
