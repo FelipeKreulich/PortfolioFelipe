@@ -25,7 +25,7 @@ De que coisas você precisa para instalar o software e como instalá-lo?
 Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
 
 ```
-Clone este repositório: git clone https://github.com/FelipeKreulich/weather_app.git
+Clone este repositório: git clone https://github.com/FelipeKreulich/dynamicportfolio.git
 Acesse a pasta weather_app com o seu editor de código
 Abra o terminal e digite: npm install | Para instalar as dependências do App
 Abra o terminal e ditite: npm run dev | Para iniciar o app em sua máquina
@@ -38,14 +38,11 @@ Mencione as ferramentas que você usou para criar seu projeto
 * [JS]((https://developer.mozilla.org/pt-BR/docs/Web/JavaScript))
 * [TAILWINDS](https://tailwindcss.com/)
 * [NextJS](https://nextjs.org/)
+* [Typescript](https://www.typescriptlang.org/)
 
 ## ✒️ Autores
 
 * **Felipe Kreulich** - *Documentação* - [FelipeKreulich](https://github.com/FelipeKreulich)
-
-## 📄 Licença
-
-Este projeto está sob a licença (MIT) - veja o arquivo [LICENSE.md](https://github.com/FelipeKreulich) para detalhes.
-
+* 
 ---
 ⌨️ com ❤️ por [Felipe Kreulich](https://gist.github.com/FelipeKreulich) 😊
