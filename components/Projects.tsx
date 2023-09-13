@@ -124,7 +124,7 @@ const Projects = () => {
               </a>
               <a
                 className="hover:text-textGreen duration-300"
-                href="https://gym-fitclub.vercel.app"
+                href="https://github.com/FelipeKreulich/todolist-fullstack"
                 target="_blank"
               >
                 <RxOpenInNewWindow />
