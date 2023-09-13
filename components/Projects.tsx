@@ -75,7 +75,7 @@ const Projects = () => {
         <div className="flex flex-col xl:flex-row-reverse gap-6">
           <a
             className="w-full xl:w-1/2 h-auto relative group"
-            href="https://gym-fitclub.vercel.app"
+            href="https://github.com/FelipeKreulich/todolist-fullstack"
             target="_blank"
           >
             <div>
@@ -92,22 +92,25 @@ const Projects = () => {
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
                 Projeto Destaque
               </p>
-              <h3 className="text-2xl font-bold">Gym Project</h3>
+              <h3 className="text-2xl font-bold">To Do List - Fullstack</h3>
             </div>
             <p className="text-sm md:text-base bg-[#112240] p-2 md:p-6 rounded-md xl:-mr-16">
-              Um projeto que teve como objetivo realizar uma
-              aplicação web para uma academia.
+              Um projeto que teve como objetivo criar um site para
+              criar lista de atividades utilizando API própria e
+              banco de dados para subir as atividades
             </p>
             <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
-              <li>React</li>
+              <li>Nodejs</li>
+              <li>Express</li>
+              <li>MySQL2</li>
             </ul>
             <div className="text-2xl flex gap-4">
               <a
                 className="hover:text-textGreen duration-300"
-                href="https://github.com/FelipeKreulich"
+                href="https://github.com/FelipeKreulich/todolist-fullstack"
                 target="_blank"
               >
                 <TbBrandGithub />
