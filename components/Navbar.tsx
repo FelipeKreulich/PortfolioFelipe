@@ -5,6 +5,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { TbBrandGithub } from "react-icons/tb";
 import { SlSocialYoutube } from "react-icons/sl";
+import Brazil from '../public/assets/images/brazil.png';
+import UnitedStates from '../public/assets/images/united-states.png';
 import {
   SlSocialLinkedin,
   SlSocialFacebook,
@@ -55,6 +57,12 @@ const Navbar = () => {
         {/* ============ Logo End here ============== */}
         {/* ============ ListItem Start here ======== */}
         <div className="hidden mdl:inline-flex items-center gap-7">
+          <button>
+            <Image src={Brazil} alt="Brazil" className="w-8 h-8"/>
+          </button>
+          <button>
+          <Image src={UnitedStates} alt="United States" className="w-8 h-8" />
+          </button>
           <ul className="flex text-[13px] gap-7">
             <Link
               className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"

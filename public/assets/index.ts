@@ -1,4 +1,4 @@
-import logo from "./images/logo.png";
+import logo from "./images/logo.svg";
 import profileImg from "./images/profile.jpg";
 import image1 from "./images/image1.jpg";
 import image2 from "./images/image2.jpg";

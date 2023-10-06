@@ -5,10 +5,10 @@ const RightSide = () => {
     <div className="w-full h-full flex flex-col items-center justify-end gap-6 text-textLight">
       <a href="mailto:contato.felipe.kreulich@gmail.com">
         <p className="text-sm rotate-90 w-72 tracking-widest text-textGreen">
-          kreulich@proton.me
+          felipek2002k@gmail.com
         </p>
       </a>
-      <span className="w-[2px] h-32 bg-textDark inline-flex"></span>
+      <span className="w-[2px] h-32 bg-textDark mt-10 inline-flex"></span>
     </div>
   );
 };
