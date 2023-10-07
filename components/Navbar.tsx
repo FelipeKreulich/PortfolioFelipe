@@ -58,10 +58,10 @@ const Navbar = () => {
         {/* ============ ListItem Start here ======== */}
         <div className="hidden mdl:inline-flex items-center gap-7">
           <button>
-            <Image src={Brazil} alt="Brazil" className="w-8 h-8"/>
+            <Image src={Brazil} alt="Brazil" className="w-8 h-8" />
           </button>
           <button>
-          <Image src={UnitedStates} alt="United States" className="w-8 h-8" />
+            <Image src={UnitedStates} alt="United States" className="w-8 h-8" />
           </button>
           <ul className="flex text-[13px] gap-7">
             <Link
@@ -310,6 +310,14 @@ const Navbar = () => {
                       <SlSocialInstagram />
                     </span>
                   </motion.a>
+                </div>
+                <div className="flex gap-3">
+                  <button>
+                    <Image src={Brazil} alt="Brazil" className="w-8 h-8" />
+                  </button>
+                  <button>
+                    <Image src={UnitedStates} alt="United States" className="w-8 h-8" />
+                  </button>
                 </div>
               </div>
 
