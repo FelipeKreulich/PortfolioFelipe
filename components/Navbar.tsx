@@ -57,12 +57,20 @@ const Navbar = () => {
         {/* ============ Logo End here ============== */}
         {/* ============ ListItem Start here ======== */}
         <div className="hidden mdl:inline-flex items-center gap-7">
-          <button>
+          <motion.button
+          initial={{ y: -10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.1 }}
+          >
             <Image src={Brazil} alt="Brazil" className="w-8 h-8" />
-          </button>
-          <button>
+          </motion.button>
+          <motion.button
+          initial={{ y: -10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.1 }}
+          >
             <Image src={UnitedStates} alt="United States" className="w-8 h-8" />
-          </button>
+          </motion.button>
           <ul className="flex text-[13px] gap-7">
             <Link
               className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
@@ -311,14 +319,19 @@ const Navbar = () => {
                     </span>
                   </motion.a>
                 </div>
-                <div className="flex gap-3">
+                <motion.div 
+                className="flex gap-3"
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 1, ease: "easeIn" }}
+                >
                   <button>
                     <Image src={Brazil} alt="Brazil" className="w-8 h-8" />
                   </button>
                   <button>
                     <Image src={UnitedStates} alt="United States" className="w-8 h-8" />
                   </button>
-                </div>
+                </motion.div>
               </div>
 
               <motion.a
