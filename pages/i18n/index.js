@@ -1,5 +1,5 @@
 const i18n = require('i18next');
-import { initReactI18next } from 'react-i18next';
+const initReactI18next = require('react-i18next').default;
 import PTBR from './locales/pt/pt-br.json';
 import ENUS from './locales/en/en-us.json';
 import LanguageDectector from 'i18next-browser-languagedetector';
