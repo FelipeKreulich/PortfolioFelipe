@@ -1,6 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const { i18n } = require('./i18n');
 
-module.exports = nextConfig
+module.exports = {
+  reactStrictMode: true,
+
+  // Adicione estas linhas para configurar a internacionalização
+  rewrites: async () => nextI18NextRewrites(),
+  ...i18n,
+};

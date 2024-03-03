@@ -1,6 +1,36 @@
 {
   "translation": {
+    "Idioma alterado com sucesso!": "Idioma alterado com sucesso!",
+    "Inicio": "Inicio",
+    "Sobre": "Sobre",
+    "Experiência": "Experiência",
+    "Projetos": "Projetos",
+    "Contato": "Contato",
+    "Currículo": "Currículo",
     "Olá, meu nome é": "Olá, meu nome é",
-    "Felipe Kreulich": "Felipe Kreulich" 
+    "Eu construo coisas para web.": "Eu construo coisas para web.",
+    "Sou um desenvolvedor fullstack. Tenho base sólida em desenvolvimento front-end e back-end e sou qualificado criando aplicativos web bonitos e responsivos usando React e seu ecossistema.": "Sou um desenvolvedor fullstack. Tenho base sólida em desenvolvimento front-end e back-end e sou qualificado criando aplicativos web bonitos e responsivos usando React e seu ecossistema.",
+    "Descubra Mais": "Descubra Mais",
+    "Veja meus Projetos!": "Veja meus Projetos!",
+    "Sobre mim": "Sobre mim",
+    "Olá! Meu nome é Felipe Kreulich e gosto de criar websites. Meu interesse em desenvolvimento web começou em 2020, quando decidi estudar desenvolvimento front-end, então começei do básico, com HTML, CSS e JavaScript!": "Olá! Meu nome é Felipe Kreulich e gosto de criar websites. Meu interesse em desenvolvimento web começou em 2020, quando decidi estudar desenvolvimento front-end, então começei do básico, com HTML, CSS e JavaScript!",
+    "Continuei estudando e tive oportunidade de estudar o ReactJS, o framework que mudou minha forma de enxergar o front-end. Depois de um tempo fui introduzido ao back-end onde aprendi sobre NodeJS e Python para fazer o back-end. E não para por aí!": "Continuei estudando e tive oportunidade de estudar o ReactJS, o framework que mudou minha forma de enxergar o front-end. Depois de um tempo fui introduzido ao back-end onde aprendi sobre NodeJS e Python para fazer o back-end. E não para por aí!",
+    "Acabei aprendendo um pouco de Java e desenvolvi um sistema de gestão de OS com o MySQL que aprendi em um vídeo no youtube.": "Acabei aprendendo um pouco de Java e desenvolvi um sistema de gestão de OS com o MySQL que aprendi em um vídeo no youtube.",
+    "Aqui está algumas das tecnologias que uso recentemente:": "Aqui está algumas das tecnologias que uso recentemente:",
+    "Carreira com TI": "Carreira com TI",
+    "Desenvolvedor Fullstack": "Desenvolvedor Fullstack",
+    "Exército Brasileiro": "Exército Brasileiro",
+    "Trabalhei como técnico de redes e de informática no 9° Batalhão de Polícia do Exército, mais especificamente na secção de Tecnologia e Informática e Comunicações (STIC), onde adquiri muito conhecimento e coloquei em prática muita coisa que aprendi em meu curso de Rede de Computadores. 🚀": "Trabalhei como técnico de redes e de informática no 9° Batalhão de Polícia do Exército, mais especificamente na secção de Tecnologia e Informática e Comunicações (STIC), onde adquiri muito conhecimento e coloquei em prática muita coisa que aprendi em meu curso de Rede de Computadores. 🚀",
+    "Meu percurso como desenvolvedor full stack na CSTC.Consulting tem sido uma jornada fascinante, onde a cada linha de código, mergulho mais fundo nas complexidades do universo tecnológico. Desde meu ingresso na empresa, tenho tido o privilégio de contribuir para projetos inovadores e desafiadores, moldando meu caminho como profissional de desenvolvimento. Cada dia na CSTC.Consulting é uma oportunidade para aprender e crescer. Colaborar com colegas talentosos e líderes visionários tem sido fundamental para meu desenvolvimento profissional. A empresa não é apenas um local de trabalho, mas um ambiente que nutre o florescimento das ideias, encorajando a exploração de novas tecnologias e metodologias. 🚀": "Meu percurso como desenvolvedor full stack na CSTC.Consulting tem sido uma jornada fascinante, onde a cada linha de código, mergulho mais fundo nas complexidades do universo tecnológico. Desde meu ingresso na empresa, tenho tido o privilégio de contribuir para projetos inovadores e desafiadores, moldando meu caminho como profissional de desenvolvimento. Cada dia na CSTC.Consulting é uma oportunidade para aprender e crescer. Colaborar com colegas talentosos e líderes visionários tem sido fundamental para meu desenvolvimento profissional. A empresa não é apenas um local de trabalho, mas um ambiente que nutre o florescimento das ideias, encorajando a exploração de novas tecnologias e metodologias. 🚀",
+    "Coisas que já criei": "Coisas que já criei",
+    "Projeto em Destaque": "Projeto em Destaque",
+    "Desenvolvi um web app que utiliza a API do GitHub para buscar usuários e exibir informações dele na tela.": "Desenvolvi um web app que utiliza a API do GitHub para buscar usuários e exibir informações dele na tela.",
+    "Projeto Destaque": "Projeto Destaque",
+    "Um projeto que teve como objetivo criar um site para criar lista de atividades utilizando API própria e banco de dados para subir as atividades": "Um projeto que teve como objetivo criar um site para criar lista de atividades utilizando API própria e banco de dados para subir as atividades",
+    "Esse projeto foi desenvolvido com o intuito de aprender um pouco sobre consumo de API, no caso uma API que disponibiliza informações do tempo de uma cidade que o usuário buscar.": "Esse projeto foi desenvolvido com o intuito de aprender um pouco sobre consumo de API, no caso uma API que disponibiliza informações do tempo de uma cidade que o usuário buscar.",
+    "Próximo Passo?": "Próximo Passo?",
+    "Entrar em Contato": "Entrar em Contato",
+    "Quer entrar em contato? Caso tenha interesse, entre em contato comigo, estarei disposto a ajudar. Ou se você quiser entrar em contato para tirar dúvidas, darei o meu melhor!": "Quer entrar em contato? Caso tenha interesse, entre em contato comigo, estarei disposto a ajudar. Ou se você quiser entrar em contato para tirar dúvidas, darei o meu melhor!",
+    "Diga Oi": "Diga Oi"
   }
 }

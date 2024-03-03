@@ -1,10 +1,11 @@
 import { useRef } from "react";
-import { logo } from "@/public/assets";
+import { logo } from "@/public/assets/";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { TbBrandGithub } from "react-icons/tb";
 import { SlSocialYoutube } from "react-icons/sl";
+import { ToastContainer, toast } from 'react-toastify';
 import Brazil from '../public/assets/images/brazil.png';
 import UnitedStates from '../public/assets/images/united-states.png';
 import {
@@ -14,6 +15,20 @@ import {
 } from "react-icons/sl";
 import { MdOutlineClose } from "react-icons/md";
 import { motion } from "framer-motion";
+import 'react-toastify/dist/ReactToastify.css';
+import { useTranslation } from 'react-i18next';
+
+const getStoredLanguage = () => localStorage.getItem('i18nextLng') || 'pt-BR';
+function LanguageSwitcher() {
+  const { i18n } = useTranslation();
+
+  const changeLanguage = (languageCode: string) => {
+    i18n.changeLanguage(languageCode);
+    localStorage.setItem('i18nextLng', languageCode);
+  };
+
+  return { changeLanguage };
+}
 
 const Navbar = () => {
   const ref = useRef<string | any>("");
@@ -27,7 +42,6 @@ const Navbar = () => {
     elem?.scrollIntoView({
       behavior: "smooth",
     });
-    // Update the class name of the clicked link
     const links = document.querySelectorAll(".nav-link");
     links.forEach((link) => {
       link.classList.remove("active");
@@ -37,10 +51,36 @@ const Navbar = () => {
 
   function handleClick(e: any) {
     if (e.target.contains(ref.current)) {
-      // do something with myRef.current
       setShow(false);
     }
   }
+
+  const notify = () => toast.success(t('Currículo Baixado com Sucesso!'), {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark"
+    });
+
+    const notifyLanguage = () => toast.success(t('Idioma alterado com sucesso!'), {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark"
+      });
+
+    const { changeLanguage } = LanguageSwitcher();
+
+    const { t } = useTranslation();
+
   return (
     <div className="w-full shadow-navbarShadow h-20 lg:h-[12vh] sticky top-0 z-50 bg-bodyColor px-4">
       <div className="max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between ">
@@ -56,20 +96,23 @@ const Navbar = () => {
         </Link>
         {/* ============ Logo End here ============== */}
         {/* ============ ListItem Start here ======== */}
+        <ToastContainer stacked />
         <div className="hidden mdl:inline-flex items-center gap-7">
           <motion.button
           initial={{ y: -10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.1 }}
+          onClick={notifyLanguage}
           >
-            <Image src={Brazil} alt="Brazil" className="w-8 h-8" />
+            <Image onClick={() => changeLanguage('pt-BR')} src={Brazil} alt="Brazil" className="w-8 h-8" />
           </motion.button>
           <motion.button
           initial={{ y: -10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.1 }}
+          onClick={notifyLanguage}
           >
-            <Image src={UnitedStates} alt="United States" className="w-8 h-8" />
+            <Image onClick={() => changeLanguage('en-US')} src={UnitedStates} alt="United States" className="w-8 h-8" />
           </motion.button>
           <ul className="flex text-[13px] gap-7">
             <Link
@@ -82,7 +125,7 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1 }}
               >
-                Início
+                {t('Início')}
               </motion.li>
             </Link>
 
@@ -97,7 +140,7 @@ const Navbar = () => {
                 transition={{ duration: 0.1, delay: 0.1 }}
               >
                 <span className="text-textGreen">01.</span>
-                Sobre
+                {t('Sobre')}
               </motion.li>
             </Link>
             <Link
@@ -111,7 +154,7 @@ const Navbar = () => {
                 transition={{ duration: 0.1, delay: 0.2 }}
               >
                 <span className="text-textGreen">02.</span>
-                Experiência
+                {t('Experiência')}
               </motion.li>
             </Link>
             <Link
@@ -125,7 +168,7 @@ const Navbar = () => {
                 transition={{ duration: 0.1, delay: 0.3 }}
               >
                 <span className="text-textGreen">03.</span>
-                Projetos
+                {t('Projetos')}
               </motion.li>
             </Link>
             <Link
@@ -139,18 +182,18 @@ const Navbar = () => {
                 transition={{ duration: 0.1, delay: 0.4 }}
               >
                 <span className="text-textGreen">04.</span>
-                Contato
+                {t('Contato')}
               </motion.li>
             </Link>
           </ul>
-          <a href="/assets/curriculo.pdf" target="_blank">
+          <a onClick={notify} href="/assets/curriculo.pdf" target="_blank">
             <motion.button
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
               className="px-4 py-2 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
             >
-              Curriculo
+              {t('Curriculo')}
             </motion.button>
           </a>
         </div>
@@ -191,7 +234,7 @@ const Navbar = () => {
                       animate={{ x: 0, opacity: 1 }}
                       transition={{ duration: 0.2, delay: 0.1, ease: "easeIn" }}
                     >
-                      Início
+                      {t('Início')}
                     </motion.li>
                   </Link>
 
@@ -206,7 +249,7 @@ const Navbar = () => {
                       transition={{ duration: 0.2, delay: 0.2, ease: "easeIn" }}
                     >
                       <span className="text-textGreen">01.</span>
-                      Sobre
+                      {t('Sobre')}
                     </motion.li>
                   </Link>
                   <Link
@@ -220,7 +263,7 @@ const Navbar = () => {
                       transition={{ duration: 0.2, delay: 0.3, ease: "easeIn" }}
                     >
                       <span className="text-textGreen">02.</span>
-                      Experiência
+                      {t('Experiência')}
                     </motion.li>
                   </Link>
                   <Link
@@ -234,7 +277,7 @@ const Navbar = () => {
                       transition={{ duration: 0.2, delay: 0.4, ease: "easeIn" }}
                     >
                       <span className="text-textGreen">03.</span>
-                      Projetos
+                      {t('Projetos')}
                     </motion.li>
                   </Link>
                   <Link
@@ -248,7 +291,7 @@ const Navbar = () => {
                       transition={{ duration: 0.2, delay: 0.5, ease: "easeIn" }}
                     >
                       <span className="text-textGreen">04.</span>
-                      Contato
+                      {t('Contato')}
                     </motion.li>
                   </Link>
                 </ul>
@@ -259,7 +302,7 @@ const Navbar = () => {
                     transition={{ delay: 0.6, ease: "easeIn" }}
                     className="w-32 h-10 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
                   >
-                    Currículo
+                    {t('Currículo')}
                   </motion.button>
                 </a>
                 <div className="flex gap-4">
@@ -325,11 +368,11 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, ease: "easeIn" }}
                 >
-                  <button>
-                    <Image src={Brazil} alt="Brazil" className="w-8 h-8" />
+                  <button onClick={notifyLanguage}>
+                    <Image onClick={() => changeLanguage('pt-BR')} src={Brazil} alt="Brazil" className="w-8 h-8" />
                   </button>
-                  <button>
-                    <Image src={UnitedStates} alt="United States" className="w-8 h-8" />
+                  <button onClick={notifyLanguage}>
+                    <Image onClick={() => changeLanguage('en-US')} src={UnitedStates} alt="United States" className="w-8 h-8" />
                   </button>
                 </motion.div>
               </div>
