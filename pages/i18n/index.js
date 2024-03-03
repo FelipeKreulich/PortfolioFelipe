@@ -1,4 +1,4 @@
-import i18n from 'i18next';
+const i18n = require('i18next');
 import { initReactI18next } from 'react-i18next';
 import PTBR from './locales/pt/pt-br.json';
 import ENUS from './locales/en/en-us.json';
