@@ -20,4 +20,4 @@ i18n
     }
   })
 
-export default i18n;
+module.exports = i18n;
