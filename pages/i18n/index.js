@@ -1,8 +1,11 @@
+// ./pages/i18n/index.js
 const i18n = require('i18next');
-const initReactI18next = require('react-i18next').default;
+const { initReactI18next } = require('react-i18next');
+const LanguageDetector = require('i18next-browser-languagedetector');
+
+// Importe seus arquivos de localização
 const PTBR = require('./locales/pt/pt-br.json');
 const ENUS = require('./locales/en/en-us.json');
-const LanguageDectector = require('i18next-browser-languagedetector');
 
 const resources = {
   'pt-BR': PTBR,
@@ -11,10 +14,10 @@ const resources = {
 
 i18n
   .use(initReactI18next)
-  .use(LanguageDectector)
+  .use(LanguageDetector)
   .init({
     resources,
-    lng: 'pt-BR',
+    fallbackLng: 'pt-BR', // Língua padrão em caso de falha na detecção
     interpolation: {
       escapeValue: false,
     },
