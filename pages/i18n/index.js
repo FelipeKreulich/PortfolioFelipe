@@ -1,4 +1,3 @@
-// i18n/index.js
 const i18n = require('i18next');
 const { initReactI18next } = require('react-i18next');
 const LanguageDetector = require('i18next-browser-languagedetector');
@@ -16,15 +15,10 @@ i18n
   .use(LanguageDetector)
   .init({
     resources,
-    fallbackLng: 'en-US',
+    fallbackLng: 'pt-BR',
     interpolation: {
       escapeValue: false,
     },
-    detection: {
-      order: ['navigator'],
-    },
-    // Adicione a propriedade `locales` como um array contendo os idiomas suportados
-    locales: ['pt-BR', 'en-US'],
   });
 
 module.exports = i18n;

@@ -1,6 +1,8 @@
-const i18n = require('./pages/i18n/index.js');
-
+// next.config.js
 module.exports = {
-  i18n,
+  i18n: {
+    locales: ['pt-BR', 'en-US'],
+    defaultLocale: 'pt-BR',
+  },
   reactStrictMode: true,
 };
