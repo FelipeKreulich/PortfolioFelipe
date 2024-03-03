@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import '../pages/i18n';
+import i18n from '../i18n/index.js';
 
 const Banner = () => {
 
