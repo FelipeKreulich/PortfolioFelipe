@@ -17,6 +17,7 @@ import { MdOutlineClose } from "react-icons/md";
 import { motion } from "framer-motion";
 import 'react-toastify/dist/ReactToastify.css';
 import { useTranslation } from 'react-i18next';
+import '../pages/i18n';
 
 const getStoredLanguage = () => localStorage.getItem('i18nextLng') || 'pt-BR';
 function LanguageSwitcher() {
