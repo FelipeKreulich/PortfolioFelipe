@@ -13,7 +13,7 @@ const Contact = () => {
       <p className="font-titleFont text-lg text-textGreen font-semibold flex items-center tracking-wide">
         04. {t('Próximo Passo?')}
       </p>
-      <h2 className="font-titleFont text-5xl font-semibold">{t('Entrar em Contato')}</h2>
+      <h2 className="font-titleFont text-center text-5xl font-semibold">{t('Entrar em Contato')}</h2>
       <p className="max-w-[600px] text-center text-textDark">
         {t('Quer entrar em contato? Caso tenha interesse, entre em contato comigo, estarei disposto a ajudar. Ou se você quiser entrar em contato para tirar dúvidas, darei o meu melhor!')}
       </p>
