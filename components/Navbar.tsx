@@ -90,6 +90,11 @@ const Navbar = () => {
     theme: "dark"
   });
 
+  const doubleClick = () => {
+    notifyModal();
+    openModal();
+  }
+
   const { changeLanguage } = LanguageSwitcher();
 
   const { t } = useTranslation();
@@ -142,8 +147,9 @@ const Navbar = () => {
             transition={{ duration: 0.1 }}
             onClick={notifyModal}
           >
-            <Image onClick={openModal} src={vsCode} alt="VsCode" className="h-[30px] w-[30px]" />
-            {showModal && (
+            <Image onClick={doubleClick} src={vsCode} alt="VsCode" className="h-[30px] w-[30px]" />
+          </motion.button>
+          {showModal && (
               <div className="fixed inset-0 flex items-center justify-center cursor-default">
                 <div className="bg-black bg-opacity-50 absolute inset-0" onClick={closeModal}></div>
                 <div className="bg-white p-8 rounded z-10 w-[40%]">
@@ -152,13 +158,12 @@ const Navbar = () => {
                       <a href="https://kreulich.notion.site/30e2eec58e6a4d02b307a6aaebf4efb9" data-iframely-url="//iframely.net/I3UHf1d"></a>
                     </div>
                   </div>
-                  <button className="bg-red-500 text-white py-2 px-4 rounded mt-4 hover:bg-red-700" onClick={closeModal}>
-                    {t('Fechar')}
-                  </button>
+                    <button className="bg-red-500 text-white py-2 px-4 rounded mt-4 hover:bg-red-700" onClick={closeModal}>
+                      {t('Fechar')}
+                    </button>
                 </div>
               </div>
             )}
-          </motion.button>
           <motion.button
             initial={{ y: -10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -434,25 +439,24 @@ const Navbar = () => {
                     initial={{ y: -10, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.1 }}
-                    onClick={notifyModal}
                   >
-                    <Image onClick={openModal} src={vsCode} alt="VsCode" className="h-[30px] w-[30px]" />
-                    {showModal && (
+                    <Image onClick={doubleClick} src={vsCode} alt="VsCode" className="h-[30px] w-[30px]" />
+                  </motion.button>
+                  {showModal && (
                       <div className="fixed inset-0 flex items-center justify-center cursor-default">
                         <div className="bg-black bg-opacity-50 absolute inset-0" onClick={closeModal}></div>
-                        <div className="bg-white p-8 rounded z-10 w-[40%]">
+                        <div className="bg-white p-8 rounded z-10 w-[70%]">
                           <div className="iframely-embed">
                             <div className="iframely-responsive" style={{ paddingBottom: '66.65%', paddingTop: '120px' }}>
                               <a href="https://kreulich.notion.site/30e2eec58e6a4d02b307a6aaebf4efb9" data-iframely-url="//iframely.net/I3UHf1d"></a>
                             </div>
                           </div>
-                          <button className="bg-red-500 text-white py-2 px-4 rounded mt-4 hover:bg-red-700" onClick={closeModal}>
-                            {t('Fechar')}
-                          </button>
+                            <button className="bg-red-500 text-white py-2 px-4 rounded mt-4 hover:bg-red-700" onClick={closeModal}>
+                              {t('Fechar')}
+                            </button>
                         </div>
                       </div>
                     )}
-                  </motion.button>
                   <button onClick={notifyLanguage}>
                     <Image onClick={() => changeLanguage('pt-BR')} src={Brazil} alt="Brazil" className="w-8 h-8" />
                   </button>
