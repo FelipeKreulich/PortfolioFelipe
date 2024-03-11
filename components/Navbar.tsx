@@ -2,12 +2,13 @@ import { useRef } from "react";
 import { logo } from "@/public/assets/";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { TbBrandGithub } from "react-icons/tb";
 import { SlSocialYoutube } from "react-icons/sl";
 import { ToastContainer, toast } from 'react-toastify';
 import Brazil from '../public/assets/images/brazil.png';
 import UnitedStates from '../public/assets/images/united-states.png';
+import vsCode from '../public/assets/images/vscode.svg';
 import {
   SlSocialLinkedin,
   SlSocialFacebook,
@@ -65,22 +66,56 @@ const Navbar = () => {
     draggable: true,
     progress: undefined,
     theme: "dark"
-    });
+  });
 
-    const notifyLanguage = () => toast.success(t('Idioma alterado com sucesso!'), {
-      position: "top-center",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark"
-      });
+  const notifyLanguage = () => toast.success(t('Idioma alterado com sucesso!'), {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark"
+  });
 
-    const { changeLanguage } = LanguageSwitcher();
+  const notifyModal = () => toast.success(t('Veja minhas configurações!'), {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark"
+  });
 
-    const { t } = useTranslation();
+  const { changeLanguage } = LanguageSwitcher();
+
+  const { t } = useTranslation();
+
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  }
+
+  useEffect(() => {
+    if (showModal) {
+      const script = document.createElement('script');
+      script.src = '//iframely.net/embed.js';
+      script.async = true;
+      document.body.appendChild(script);
+
+      return () => {
+        document.body.removeChild(script);
+      };
+    }
+  }, [showModal]);
 
   return (
     <div className="w-full shadow-navbarShadow h-20 lg:h-[12vh] sticky top-0 z-50 bg-bodyColor px-4">
@@ -102,18 +137,41 @@ const Navbar = () => {
         <ToastContainer stacked />
         <div className="hidden mdl:inline-flex items-center gap-7">
           <motion.button
-          initial={{ y: -10, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.1 }}
-          onClick={notifyLanguage}
+            initial={{ y: -10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.1 }}
+            onClick={notifyModal}
+          >
+            <Image onClick={openModal} src={vsCode} alt="VsCode" className="h-[30px] w-[30px]" />
+            {showModal && (
+              <div className="fixed inset-0 flex items-center justify-center cursor-default">
+                <div className="bg-black bg-opacity-50 absolute inset-0" onClick={closeModal}></div>
+                <div className="bg-white p-8 rounded z-10 w-[40%]">
+                  <div className="iframely-embed">
+                    <div className="iframely-responsive" style={{ paddingBottom: '66.65%', paddingTop: '120px' }}>
+                      <a href="https://kreulich.notion.site/30e2eec58e6a4d02b307a6aaebf4efb9" data-iframely-url="//iframely.net/I3UHf1d"></a>
+                    </div>
+                  </div>
+                  <button className="bg-red-500 text-white py-2 px-4 rounded mt-4 hover:bg-red-700" onClick={closeModal}>
+                    {t('Fechar')}
+                  </button>
+                </div>
+              </div>
+            )}
+          </motion.button>
+          <motion.button
+            initial={{ y: -10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.1 }}
+            onClick={notifyLanguage}
           >
             <Image onClick={() => changeLanguage('pt-BR')} src={Brazil} alt="Brazil" className="w-8 h-8" />
           </motion.button>
           <motion.button
-          initial={{ y: -10, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.1 }}
-          onClick={notifyLanguage}
+            initial={{ y: -10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.1 }}
+            onClick={notifyLanguage}
           >
             <Image onClick={() => changeLanguage('en-US')} src={UnitedStates} alt="United States" className="w-8 h-8" />
           </motion.button>
@@ -365,12 +423,36 @@ const Navbar = () => {
                     </span>
                   </motion.a>
                 </div>
-                <motion.div 
-                className="flex gap-3"
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1, ease: "easeIn" }}
+
+                <motion.div
+                  className="flex gap-3"
+                  initial={{ y: 20, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 1, ease: "easeIn" }}
                 >
+                  <motion.button
+                    initial={{ y: -10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.1 }}
+                    onClick={notifyModal}
+                  >
+                    <Image onClick={openModal} src={vsCode} alt="VsCode" className="h-[30px] w-[30px]" />
+                    {showModal && (
+                      <div className="fixed inset-0 flex items-center justify-center cursor-default">
+                        <div className="bg-black bg-opacity-50 absolute inset-0" onClick={closeModal}></div>
+                        <div className="bg-white p-8 rounded z-10 w-[40%]">
+                          <div className="iframely-embed">
+                            <div className="iframely-responsive" style={{ paddingBottom: '66.65%', paddingTop: '120px' }}>
+                              <a href="https://kreulich.notion.site/30e2eec58e6a4d02b307a6aaebf4efb9" data-iframely-url="//iframely.net/I3UHf1d"></a>
+                            </div>
+                          </div>
+                          <button className="bg-red-500 text-white py-2 px-4 rounded mt-4 hover:bg-red-700" onClick={closeModal}>
+                            {t('Fechar')}
+                          </button>
+                        </div>
+                      </div>
+                    )}
+                  </motion.button>
                   <button onClick={notifyLanguage}>
                     <Image onClick={() => changeLanguage('pt-BR')} src={Brazil} alt="Brazil" className="w-8 h-8" />
                   </button>
