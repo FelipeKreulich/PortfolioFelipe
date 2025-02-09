@@ -3,20 +3,30 @@ import SectionTitle from "./SectionTitle";
 import EB from "./works/eb";
 import CSTC from "./works/cstc";
 import { useTranslation } from "react-i18next";
+import AZ from "./works/az";
 
 const Experience = () => {
   const [workCSTC, setWorkCSTC] = useState(true);
   const [workEB, setWorkEB] = useState(false);
+  const [workAZ, setWorkAZ] = useState(false);
 
   const handleCSTC = () => {
     setWorkCSTC(true);
     setWorkEB(false);
+    setWorkAZ(false);
   };
 
   const handleEB = () => {
     setWorkCSTC(false);
     setWorkEB(true);
+    setWorkAZ(false);
   };
+
+  const handleAZ = () => {
+    setWorkCSTC(false);
+    setWorkEB(false);
+    setWorkAZ(true);
+  }
 
   const { t } = useTranslation();
 
@@ -48,9 +58,20 @@ const Experience = () => {
           >
             CSTC.Consulting
           </li>
+          <li
+            onClick={handleAZ}
+            className={`${
+              workAZ
+                ? "border-l-textGreen text-textGreen"
+                : "border-l-hoverColor text-textDark"
+            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
+          >
+            {t('AZ Tecnologia')}
+          </li>
         </ul>
         {workCSTC && <CSTC />}
         {workEB && <EB />}
+        {workAZ && <AZ />}
       </div>
     </section>
   );

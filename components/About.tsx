@@ -23,7 +23,7 @@ const About = () => {
             {t('Continuei estudando e tive oportunidade de estudar o ReactJS, o framework que mudou minha forma de enxergar o front-end. Depois de um tempo fui introduzido ao back-end onde aprendi sobre NodeJS e Python para fazer o back-end. E não para por aí!')}
           </p>
           <p>
-            {t('Acabei aprendendo um pouco de Java e desenvolvi um sistema de gestão de OS com o MySQL que aprendi em um vídeo no youtube.')}
+            {t('Acabei aprendendo um pouco de Java e desenvolvi um sistema de gestão de OS com o MySQL.')}
           </p>
           <p>{t('Aqui está algumas das tecnologias que uso recentemente:')}</p>
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
@@ -61,12 +61,6 @@ const About = () => {
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
-              Express.js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
               MySQL
             </li>
             <li className="flex items-center gap-2">
@@ -85,7 +79,13 @@ const About = () => {
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
-              Wordpress
+              Laravel
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
+              Python
             </li>
           </ul>
         </div>
